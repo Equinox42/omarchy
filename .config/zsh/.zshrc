@@ -64,5 +64,3 @@ source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/bindings.zsh"
 # plugins configuration
 source "$ZDOTDIR/plugins.zsh"
-# colors configuration
-source "$ZDOTDIR/colors.zsh"
