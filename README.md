@@ -9,3 +9,9 @@ mkdir ~/.config/zsh
 mkdir -p .local/state/zsh
 mkdir -p .cache/zsh
 ```
+
+### Install packages
+
+```bash
+omarchy pkg add $(cat packages.list)
+```
