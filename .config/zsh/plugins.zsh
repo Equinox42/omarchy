@@ -24,4 +24,5 @@ zplugin-update() {
 }
 
 _zplugin_load zsh-users zsh-autosuggestions
-_zplugin_load zdharma-continuum fast-syntax-highlighting
+_zplugin_load zsh-users zsh-syntax-highlighting
+
