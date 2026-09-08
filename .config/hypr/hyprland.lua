@@ -21,19 +21,25 @@ require("hypr.input")
 require("hypr.bindings")
 require("hypr.looknfeel")
 require("hypr.autostart")
+require("hypr.animation")
 
 -- Toggle config flags dynamically.
 require("default.hypr.toggles")
 
--- Add any other personal Hyprland configuration below.
--- o.window("qemu", { workspace = "5" })
-
 -- Assign apps to workspaces
 o.window("zen", { workspace = "1" })
-o.window("com.mitchellh.ghostty", { workspace = "2"})
-o.window("obsidian", { workspace = "3" })
+o.window("kitty", { workspace = "2"})
+o.window("md.obsidian.Obsidian", { workspace = "3" })
+o.window("discord", { workspace = "4" })
 o.window("anki", { workspace = "5" })
 o.window("org.gnome.Nautilus", { workspace = "6" })
 o.window("Spotify", { workspace = "7" })
 o.window("code", { workspace = "8" })
 o.window("firefox", { workspace = "special" })
+
+-- Assign workspaces to monitors
+hl.workspace_rule({ workspace = "1", monitor = "DP-2", default = true })
+hl.workspace_rule({ workspace = "8", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "3", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "4", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "7", monitor = "eDP-1" })
